@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>BubblePop</title>
+  </head>
+  <body>
+    <h1 id="heading">Bubble Pop Game</h1>
+      <div id="scoreBoard">
+          <h2>Score Board</h2>
+            <div id="rounds"></div>
+            <div id="score"></div>
+            <div id="timer"></div>
+      </div>
+      
+      <canvas id="gameCanvas" width="900" height="600"></canvas>
+      <div id="menu"> 
+          <button id="startButton">Start</button>
+            <p id="countdown"></p>
+              <div id="gameOver">
+                <p id="finalScore"></p>
+                <p id="gameOverText">Game Over</p>
+                <div id="form">
+                  <form id="submitForm">
+                    <label for="name">Save youre Score:</label>
+                      <div class="inputs">
+                        <div class="inp">
+                          <input type="text" id="name" name="text" class="input" placeholder="Enter Name" maxlength="15" required="">
+                          <button type="submit">Save Score</button>
+                        </div>
+                      </div>
+                  </form>
+                    <button id="restartButton">Next Game</button>
+                  </div>
+                </div>  
+      </div>
+      <div id="leaderBoard">
+        <h2>Leader Board</h2>
+      </div>
+      <audio id="bubbleSound">
+      <source src="./sound/Bloob.mp3" type="audio/mpeg" />
+      </audio>
+    <script src="scoreboard.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
+
